@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <div className="pt-24 bg-surface dark:bg-black">
+    <div className="pt-24 bg-surface">
       {/* HERO SECTION - Updated image to reflect structure, frame and systemic rules */}
       <section className="container mx-auto px-6 pt-10 pb-12">
         <div className="overflow-hidden rounded-[3rem]">
@@ -22,16 +22,15 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
           <div className="lg:col-span-4">
              <div className="sticky top-32 space-y-6">
-                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted block">01 — L'Essence</span>
-                <h2 className="font-display text-3xl font-bold tracking-tighter leading-tight italic">Concevoir le cadre avant le projet.</h2>
+                <h2 className="text-3xl font-bold tracking-tighter leading-tight">Concevoir le cadre avant le projet.</h2>
              </div>
           </div>
           
           <div className="lg:col-span-8">
             <div className="space-y-12 text-xl md:text-2xl text-muted font-light leading-relaxed max-w-4xl">
 
-              <div className="space-y-6 pt-12 border-t border-gray-100 dark:border-neutral-900">
-                <p>
+              <div className="space-y-6 pt-12 border-t border-gray-100">
+                <p className="italic">
                   Toute création dépend de son environnement :
                   des méthodes utilisées, des relations entre les personnes,
                   des espaces dans lesquels les idées émergent,
@@ -42,7 +41,7 @@ const About: React.FC = () => {
                 </p>
               </div>
 
-              <div className="space-y-6 pt-12 border-t border-gray-100 dark:border-neutral-900">
+              <div className="space-y-6 pt-12 border-t border-gray-100">
                 <p>
                   Nous accompagnons les organisations à structurer les environnements qui rendent le design, 
                   l’innovation et la création réellement possibles. Avant de concevoir des projets, nous concevons le cadre dans lequel ils prennent forme.
@@ -52,15 +51,15 @@ const About: React.FC = () => {
                 </p>
               </div>
 
-              <div className="space-y-6 pt-12 border-t border-gray-100 dark:border-neutral-900">
+              <div className="space-y-6 pt-12 border-t border-gray-100">
                 <p>
-                  Nous travaillons sur les <span className="text-black dark:text-white font-medium">systèmes de création</span> : 
+                  Nous travaillons sur les <span className="text-black font-medium">systèmes de création</span> : 
                   les méthodes, les processus, les espaces, les rôles et les cultures qui permettent aux équipes de penser clairement, 
                   de décider collectivement et de transformer des intentions en actions concrètes.
                 </p>
               </div>
 
-              <div className="space-y-6 pt-12 border-t border-gray-100 dark:border-neutral-900">
+              <div className="space-y-6 pt-12 border-t border-gray-100">
                 <p>
                   Nous croyons à la <span className="italic">convergence des expertises</span>. 
                   Design, technologie, art, science, économie, service public : c’est dans la rencontre de ces disciplines que naissent les réponses les plus justes face à la complexité.
@@ -70,7 +69,7 @@ const About: React.FC = () => {
                 </p>
               </div>
 
-              <div className="space-y-6 pt-12 border-t border-gray-100 dark:border-neutral-900">
+              <div className="space-y-6 pt-12 border-t border-gray-100">
                 <p>
                   Chaque projet est une mise en situation réelle : tester, ajuster, apprendre, produire. 
                   Non pour explorer indéfiniment, mais pour faire avancer.
@@ -81,12 +80,9 @@ const About: React.FC = () => {
                 </p>
               </div>
 
-              <div className="space-y-6 pt-12 border-t border-gray-100 dark:border-neutral-900">
-                <p>
-                  S9 est un espace de conception et d’accompagnement. Un lieu où la complexité devient lisible, 
-                  où les idées circulent, et où la création redevient collective.
-                </p>
-                <p className="font-display text-black dark:text-white font-bold italic text-3xl md:text-4xl mt-12">
+              <div className="space-y-6 pt-12 border-t border-gray-100">
+              
+                <p className="text-black font-bold text-3xl md:text-4xl mt-12">
                   Nous ne cherchons pas à maîtriser le futur. Nous cherchons à le rendre concevable, souhaitable et partageable.
                 </p>
               </div>
@@ -99,7 +95,7 @@ const About: React.FC = () => {
       <section className="container mx-auto px-6 py-32 text-center">
         <div className="bg-black text-white rounded-[4rem] p-12 md:p-32 relative overflow-hidden shadow-2xl">
           <div className="relative z-10 space-y-12">
-            <h2 className="font-display text-4xl md:text-7xl font-bold tracking-tighter leading-tight max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-7xl font-bold tracking-tighter leading-tight max-w-4xl mx-auto">
               Prêt à concevoir les conditions de votre réussite ?
             </h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
@@ -111,8 +107,8 @@ const About: React.FC = () => {
               </Link>
             </div>
           </div>
-          <div className="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center">
-            <span className="text-[40vw] font-black tracking-tighter select-none">S9</span>
+          <div className="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center select-none">
+            <span className="font-logo text-[40vw] font-black leading-none tracking-tighter">§</span>
           </div>
         </div>
       </section>

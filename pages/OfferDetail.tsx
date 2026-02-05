@@ -58,12 +58,12 @@ const OfferDetail: React.FC = () => {
             <div className="space-y-10">
               <div className="space-y-4">
                 <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted block">La Problématique</span>
-                <p className="text-2xl md:text-3xl font-bold tracking-tighter leading-tight italic">{offer.problem}</p>
+                <p className="text-2xl md:text-3xl font-bold tracking-tighter leading-tight">{offer.problem}</p>
               </div>
               
               <div className="space-y-4">
                 <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted block">La Solution S9</span>
-                <p className="text-lg text-muted leading-relaxed max-w-2xl">{offer.solution}</p>
+                <p className="text-lg text-muted leading-relaxed max-w-2xl italic">{offer.solution}</p>
               </div>
               <div className="text-[10px] font-bold text-muted uppercase tracking-widest">(01)</div>
             </div>
@@ -76,7 +76,7 @@ const OfferDetail: React.FC = () => {
                  {offer.benefits.map((benefit, idx) => (
                    <div key={idx} className="flex items-center gap-4 p-4 border border-gray-50 dark:border-neutral-800 rounded-2xl bg-surface dark:bg-black/50">
                      <CheckCircle2 size={18} className="text-black dark:text-white shrink-0" />
-                     <span className="text-sm font-medium">{benefit}</span>
+                     <span className="text-sm font-medium italic">{benefit}</span>
                    </div>
                  ))}
                </div>
@@ -92,13 +92,13 @@ const OfferDetail: React.FC = () => {
                    <h4 className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-muted">
                       <Calendar size={12} /> Format / Durée
                    </h4>
-                   <p className="text-lg font-bold">{offer.format}</p>
+                   <p className="text-lg font-bold italic">{offer.format}</p>
                 </div>
                 <div className="space-y-2">
                    <h4 className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-muted">
                       <Users size={12} /> Cible
                    </h4>
-                   <p className="text-lg font-bold">{offer.target}</p>
+                   <p className="text-lg font-bold italic">{offer.target}</p>
                 </div>
               </div>
 
@@ -137,7 +137,7 @@ const OfferDetail: React.FC = () => {
                 {ICON_MAP[other.icon]}
               </div>
               <h3 className="text-xl font-bold mb-4 transition-all">{other.title}</h3>
-              <p className="text-xs text-muted line-clamp-2">{other.shortDescription}</p>
+              <p className="text-xs text-muted line-clamp-2 italic">{other.shortDescription}</p>
             </Link>
           ))}
         </div>

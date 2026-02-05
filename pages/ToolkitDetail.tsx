@@ -61,7 +61,7 @@ const ToolkitDetail: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-muted block">Temps estimé</span>
-                    <p className="text-sm font-bold">{tool.estimatedTime}</p>
+                    <p className="text-sm font-bold italic">{tool.estimatedTime}</p>
                   </div>
                 </div>
                 
@@ -71,7 +71,7 @@ const ToolkitDetail: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-muted block">Matériel nécessaire</span>
-                    <ul className="text-xs font-medium space-y-1 mt-1">
+                    <ul className="text-xs font-medium space-y-1 mt-1 italic">
                       {tool.materials.map((m, i) => <li key={i}>• {m}</li>)}
                     </ul>
                   </div>
@@ -83,7 +83,7 @@ const ToolkitDetail: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-muted block">Quand l’utiliser</span>
-                    <ul className="text-xs font-medium space-y-1 mt-1">
+                    <ul className="text-xs font-medium space-y-1 mt-1 italic">
                       {tool.whenToUse.map((w, i) => <li key={i}>• {w}</li>)}
                     </ul>
                   </div>
@@ -108,7 +108,7 @@ const ToolkitDetail: React.FC = () => {
                 {tool.whatItAllows.map((item, i) => (
                   <li key={i} className="flex gap-4">
                     <CheckCircle2 size={20} className="shrink-0 text-black dark:text-white" />
-                    <p className="text-sm text-muted leading-relaxed">{item}</p>
+                    <p className="text-sm text-muted leading-relaxed italic">{item}</p>
                   </li>
                 ))}
               </ul>
@@ -120,7 +120,7 @@ const ToolkitDetail: React.FC = () => {
                 {tool.expectedResult.map((item, i) => (
                   <li key={i} className="flex gap-4">
                     <Target size={20} className="shrink-0 text-black dark:text-white" />
-                    <p className="text-sm text-muted leading-relaxed">{item}</p>
+                    <p className="text-sm text-muted leading-relaxed italic">{item}</p>
                   </li>
                 ))}
               </ul>
@@ -142,7 +142,7 @@ const ToolkitDetail: React.FC = () => {
                   </div>
                   <div className="space-y-3">
                     <h4 className="text-xl font-bold tracking-tight">{step.title}</h4>
-                    <p className="text-muted leading-relaxed text-sm">{step.description}</p>
+                    <p className="text-muted leading-relaxed text-sm italic">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -175,7 +175,7 @@ const ToolkitDetail: React.FC = () => {
             <h3 className="text-2xl font-bold tracking-tighter">Exemples / Cas d’usage</h3>
             <div className="space-y-6">
               {tool.useCases.map((uc, i) => (
-                <p key={i} className="text-sm text-gray-400 leading-relaxed border-l border-white/20 pl-6">
+                <p className="text-sm text-gray-400 leading-relaxed border-l border-white/20 pl-6 italic" key={i}>
                   {uc}
                 </p>
               ))}
@@ -187,7 +187,7 @@ const ToolkitDetail: React.FC = () => {
 
       {/* 5. CTA SECTION */}
       <section className="container mx-auto px-6 py-20 pb-40 text-center">
-        <h3 className="text-2xl font-bold mb-12 italic">Besoin d'un accompagnement pour animer ce protocole ?</h3>
+        <h3 className="text-2xl font-bold mb-12">Besoin d'un accompagnement pour animer ce protocole ?</h3>
         <Link 
           to="/contact" 
           className="group inline-flex items-center gap-6 px-12 py-6 bg-black dark:bg-white text-white dark:text-black rounded-full font-bold uppercase tracking-[0.2em] hover:scale-105 transition-transform"

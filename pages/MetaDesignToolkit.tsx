@@ -138,7 +138,7 @@ const MetaDesignToolkit: React.FC = () => {
       </section>
 
       {/* 4. ACCESS SECTION */}
-      <section className="container mx-auto px-6 py-32">
+      <section className="container mx-auto px-6 py-32 mb-20">
         <div className="bg-black text-white rounded-[4rem] p-12 md:p-32 relative overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
             <div className="space-y-10">
@@ -174,19 +174,6 @@ const MetaDesignToolkit: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* 5. FOOTER MINI NAV */}
-      <footer className="container mx-auto px-6 py-20 border-t border-gray-100 dark:border-neutral-900 text-center">
-        <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-muted mb-8">Partager ce catalogue</p>
-        <div className="flex justify-center gap-6">
-          <button className="w-12 h-12 rounded-full border border-gray-100 dark:border-neutral-800 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all">
-            <Share2 size={18} />
-          </button>
-          <button className="w-12 h-12 rounded-full border border-gray-100 dark:border-neutral-800 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all">
-            <FileText size={18} />
-          </button>
-        </div>
-      </footer>
     </div>
   );
 };

@@ -29,7 +29,7 @@ const Events: React.FC = () => {
             <h1 className="text-4xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9] text-balance mb-8">
               Événements & Échanges
             </h1>
-            <p className="text-lg md:text-xl text-muted font-light max-w-2xl ml-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-muted font-light max-w-2xl ml-auto leading-relaxed italic">
               Explorez les nouvelles frontières du design avec nos masterclasses et ateliers immersifs.
             </p>
           </div>
@@ -68,7 +68,7 @@ const Events: React.FC = () => {
                 <h3 className="text-3xl md:text-4xl font-bold tracking-tighter transition-all">
                   {event.title}
                 </h3>
-                <p className="text-muted leading-relaxed max-w-md">
+                <p className="text-muted leading-relaxed max-w-md italic">
                   {event.description}
                 </p>
                 
@@ -94,11 +94,11 @@ const Events: React.FC = () => {
               {subscribed ? (
                 <div className="bg-white/5 border border-white/10 rounded-3xl p-10 text-center animate-in zoom-in-95">
                   <Mail className="w-12 h-12 mx-auto text-white mb-4" />
-                  <h3 className="text-2xl font-bold italic">Bienvenue dans le réseau S9.</h3>
+                  <h3 className="text-2xl font-bold">Bienvenue dans le réseau S9.</h3>
                 </div>
               ) : (
                 <form onSubmit={handleSubscribe} className="space-y-6">
-                  <p className="text-muted text-lg">Recevez nos dernières réflexions et outils exclusifs directement par mail.</p>
+                  <p className="text-muted text-lg italic">Recevez nos dernières réflexions et outils exclusifs directement par mail.</p>
                   <div className="relative group">
                     <input
                       type="email"

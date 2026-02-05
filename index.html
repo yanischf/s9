@@ -5,10 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>S9 — Global Design Studio</title>
+    <script>
+      // Suppression de l'avertissement Tailwind CDN en production
+      const originalWarn = console.warn;
+      console.warn = (...args) => {
+        if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com should not be used in production')) {
+          return;
+        }
+        originalWarn(...args);
+      };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -17,6 +27,7 @@
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
               display: ['Sen', 'sans-serif'],
+              logo: ['Open Sans', 'sans-serif'],
             },
             colors: {
               accent: '#000000',
@@ -36,6 +47,14 @@
         font-family: 'Inter', sans-serif;
         background-color: #F9F9F9;
       }
+      h1, h2, h3 {
+        font-family: 'Sen', sans-serif !important;
+        font-style: normal !important;
+      }
+      .font-logo {
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 800 !important;
+      }
       .dark body {
         background-color: #000000;
       }
@@ -46,13 +65,13 @@
         overflow: hidden;
       }
 
-      /* Custom Cursor § for interactive elements */
+      /* Custom Cursor § for interactive elements with Open Sans 800 */
       a, button, [role="button"], input[type="submit"], input[type="button"], select, label, summary, .cursor-pointer {
-        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' fill='black' font-size='24' font-family='sans-serif' font-weight='bold'>§</text></svg>") 8 16, pointer !important;
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' fill='black' font-size='24' font-family='Open Sans, sans-serif' font-weight='800'>§</text></svg>") 8 16, pointer !important;
       }
 
       .dark a, .dark button, .dark [role="button"], .dark input[type="submit"], .dark input[type="button"], .dark select, .dark label, .dark summary, .dark .cursor-pointer {
-        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' fill='white' font-size='24' font-family='sans-serif' font-weight='bold'>§</text></svg>") 8 16, pointer !important;
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' fill='white' font-size='24' font-family='Open Sans, sans-serif' font-weight='800'>§</text></svg>") 8 16, pointer !important;
       }
     </style>
   <script type="importmap">

@@ -158,66 +158,6 @@ export const TOOLKIT_ITEMS: ToolkitItem[] = [
     ],
     icon: 'Sprout',
     tags: ["Sous-conception", "Agilité", "Vivant"]
-  },
-  {
-    id: 'env-audit',
-    title: "Audit d'environnement collaboratif",
-    category: 'Terrain',
-    objective: "Évaluer si tes équipes, vos espaces et vos pratiques actuelles permettent vraiment la collaboration et l’innovation, et identifier les leviers pour les renforcer.",
-    whenToUse: [
-      "Au début d’un projet pour structurer le cadre",
-      "Lors de transformations organisationnelles",
-      "Avant de lancer de nouvelles pratiques collaboratives"
-    ],
-    whatItAllows: [
-      "Cartographier les forces, freins et opportunités de ton environnement de travail",
-      "Identifier ce qui ralentit la créativité et la fluidité des échanges",
-      "Prioriser les actions pour installer une dynamique collective solide"
-    ],
-    materials: [
-      "Post‑its et tableau blanc (Miro/Mural)",
-      "Grille d’évaluation / checklist S9",
-      "Papier et stylos pour les observations"
-    ],
-    estimatedTime: "1 à 2 journées (modulable)",
-    steps: [
-      {
-        title: "Prépare ton audit",
-        description: "Liste les équipes, services et espaces que tu souhaites observer. Définis les objectifs : ce que tu veux comprendre, ce que tu veux améliorer."
-      },
-      {
-        title: "Observe et écoute",
-        description: "Promène-toi dans les espaces ou observe les interactions digitales. Note comment les gens travaillent. Pose quelques questions simples : « Qu’est-ce qui t’aide à avancer ? Qu’est-ce qui te freine ? »"
-      },
-      {
-        title: "Collecte et organise tes observations",
-        description: "Rassemble les notes, identifie les patterns. Classe les éléments par forces, freins et opportunités. Cherche ce qui revient souvent."
-      },
-      {
-        title: "Analyse et priorise",
-        description: "Regarde ce que tu peux améliorer rapidement et ce qui demande plus de temps. Note les actions qui auront le plus d’effet."
-      },
-      {
-        title: "Restitue et engage l’équipe",
-        description: "Partage tes observations de manière visuelle. Fais participer le collectif pour co-prioriser. Crée un plan simple pour tester les premières améliorations."
-      }
-    ],
-    expectedResult: [
-      "Une vision claire de ce qui fonctionne et peut être amélioré",
-      "Des actions concrètes pour fluidifier les interactions",
-      "Une première dynamique collective lancée"
-    ],
-    tips: [
-      "Implique différents niveaux hiérarchiques pour une vision complète",
-      "Fais des mini-interviews pour compléter tes observations",
-      "Reviens faire l’audit après quelques mois pour mesurer les progrès"
-    ],
-    useCases: [
-      "Une équipe produit découvre que la disposition de ses bureaux freine la collaboration. Après ajustement, les échanges deviennent fluides.",
-      "Une collectivité teste ses nouvelles pratiques avant un déploiement global."
-    ],
-    icon: 'Box',
-    tags: ["Audit", "Espace", "Culture"]
   }
 ];
 
